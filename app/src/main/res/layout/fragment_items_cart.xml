@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvPriceCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="$10"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvSizeCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvSizeCart" />
+
+    <ImageView
+        android:id="@+id/imageViewCart"
+        android:layout_width="100dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android_mobile_app_developer" />
+
+    <TextView
+        android:id="@+id/tvNameCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:text="Android Dev"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCart"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCart" />
+
+    <TextView
+        android:id="@+id/tvSizeCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Size XL"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameCart" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtnMinus"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnMinus"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnMinus"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imgbtnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtnAdd"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnAdd"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnAdd"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/group_8" />
+
+    <ImageButton
+        android:id="@+id/imgbtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSizeCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSizeCart"
+        app:srcCompat="@drawable/group_7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
